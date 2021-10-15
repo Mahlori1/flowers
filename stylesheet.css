@@ -1,0 +1,79 @@
+body{
+    font-family: 'Varela Round';
+    /*background-color: #e9dddd;*/
+    
+    background-color: #f5efef;
+    margin: 20px;
+    
+
+}
+
+#nav {
+    
+  
+    background-color: #e9dddd;
+    font-weight: bold;
+    font-family: 'Helvetica';
+}
+
+#footer{
+    background-color: #e9dddd;
+    padding: 50px;
+}
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 10rem 0;
+    
+}
+
+.header h1{
+    font-family: 'Varela Round';
+    letter-spacing: 0.8rem;
+    
+}
+
+.about-section{
+    padding-top: 10rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.gallery-section{
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+td img{
+    max-width: 100px;
+}
+
+.gallery{
+    max-width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+li+li{
+    padding-left: 10PX;
+}
+
+@media (min-width: 600px) {
+    td img{
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 992px) {
+    td img{
+        max-width: 250px;
+    }
+}
