@@ -1,33 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link href="stylesheet.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="fontawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <title>Hello, world!</title>
+    <title>Flowers</title>
   </head>
-  <body>
-    <div class="conatiner">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
-        <a class="navbar-brand mx-auto" href="#">Lorem</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" area-label="Toggle navigation">
-          menu
+  <body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
+      <div class="container">
+        
+        <a class="navbar-brand brand-name mx-auto text-center" href="#">Flowers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" area-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
-          <ul class="navbar-nav">
+        
+        <div class="collapse navbar-collapse justify-content-center"  id="navbarScroll">
+          <ul class="navbar-nav nav justify-content-center">
             <li class="nav-item js-scroll-trigger">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
 
             <li class="nav-item">
@@ -41,31 +39,34 @@
             <li class="nav-item js-scroll-trigger">
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
-
           </ul>
         </div>
-      </nav>
-    </div>
-      
+      </div> 
+    </nav>
     
-
-    <header class="header">
+    <header class="header" id="home">
+      <div class="socials d-inline-block d-column my-3" >
+        <div><a href=""><i class="fab fa-2x fa-facebook-f mx-2 my-2"></i></a></div>
+        <div><a href=""><i class="fab fa-2x fa-instagram mx-2 my-2"></i></a></div>
+        <div><a href=""><i class="fab fa-2x fa-twitter mx-2 my-2"></i></a></div>   
+      </div>  
       <div class="container align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto">Lorem</h1><br><br>
+          <h1 class="mx-auto">Flowers</h1><br><br>
             <div class="row">
-              <div class="col-xl-8 col-lg-7 ">
+              <div class="col-lg-7 ">
                   <img src="image2.jpg" class="img-fluid " id="firstImage" alt="">
               </div>
-              <div class="col-xl-4 col-lg-5">
-                <div class="featured-text text-center text-lg-left">
+              <div class="col-lg-5">
+                <div class="featured-text text-start text-lg-left">
                   <h2>Welcome to my site</h2>
-                  <p>A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms).
-                      The biological function of a flower is to affect reproduction, usually by providing a mechanism for the union of sperm with eggs.
+                  <p class="h4 mainText">A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms).</p>
+                    <p>The biological function of a flower is to affect reproduction, usually by providing a mechanism for the union of sperm with eggs.
                       Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower).
                       Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop.
                       Many flowers have evolved to be attractive to animals, so as to cause them to be vectors for the transfer of pollen. 
                       After fertilization, the ovary of the flower develops into fruit containing seeds.</p>
+                      
                 </div>
               </div>
             </div>
@@ -73,64 +74,264 @@
       </div>
     </header>  
 
-      <section id="about" class="about-section text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="">About</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat quibusdam eum facere nulla, explicabo nobis ipsa? Repudiandae aperiam labore, eveniet, quam voluptatibus cum architecto mollitia maiores illum, omnis fuga.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa nulla corporis voluptatem, recusandae, numquam nihil illum necessitatibus, sequi exercitationem placeat natus nisi esse adipisci magni sit minus officiis illo.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil modi ad non tenetur quo facilis voluptatum minus earum, mollitia reprehenderit minima maiores commodi quae provident, voluptas iste ducimus aliquam!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad rem cumque magnam officia nostrum, quia incidunt obcaecati culpa quo ab ipsum tenetur quae eligendi corporis quos dolorem! Ad, sequi?</p>
+    <section id="about" class="about-section ">
+      <div class="container">
+        <h2 class="text-center mb-5">About</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugiat quibusdam eum facere nulla, explicabo nobis ipsa? Repudiandae aperiam labore, eveniet, quam voluptatibus cum architecto mollitia maiores illum, omnis fuga.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa nulla corporis voluptatem, recusandae, numquam nihil illum necessitatibus, sequi exercitationem placeat natus nisi esse adipisci magni sit minus officiis illo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas rerum perspiciatis necessitatibus commodi temporibus voluptatibus fugit error laborum itaque dolor illo tempore a, pariatur facere blanditiis unde, fuga expedita accusantium.</p>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil modi ad non tenetur quo facilis voluptatum minus earum, mollitia reprehenderit minima maiores commodi quae provident, voluptas iste ducimus aliquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad rem cumque magnam officia nostrum, quia incidunt obcaecati culpa quo ab ipsum tenetur quae eligendi corporis quos dolorem! Ad, sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, minima! Nihil, maiores laudantium? Ut, eaque earum vero velit doloremque aliquam est quod hic inventore illo repellendus! Recusandae ipsum exercitationem id!</p>
+          </div>
+        </div>
+
+        <div class="about-socials justify-content-center d-inline-flex my-3 text-center" >
+          <div><a href=""><i class="fab fa-facebook-f mx-2 my-2"></i></a></div>
+          <div><a href=""><i class="fab fa-instagram mx-2 my-2"></i></a></div>
+          <div><a href=""><i class="fab fa-twitter mx-2 my-2"></i></a></div>   
+        </div>  
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section text-center">
+      <div class="container">
+        <h2 class="mb-5">Gallery</h2>
+        <div class="justify-content-center align-items-center">
+          <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel">
+            <div class="d-flex justify-content-center mb-1">
+              <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      
+            <div class="carousel-inner py-4">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image2.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image4.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image9.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image6.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image7.jpg" class="card-img-top" alt="flower"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image8.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image11.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image12.jpg" class="card-img-top" alt="flower"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="card">
+                        <img src="images/image13.jpg" class="card-img-top" alt="flower"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Flower Name</h5>
+                          <p class="card-text">
+                            A brief description about the flower name, etc...
+                          </p>
+                          <p class="card-text">
+                            Pricing: From R100 (add price if you like)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-        
+      </div>  
+    </section>
 
+    <section class="contacts-section" id="contacts">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="row">
+          <div class="map col-md-6">
+            <h4 class="h6 text-center mb-3">Visit my store</h4>
+            <div class="embed-responsive embed-responsive-21by9"></div>
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1158669982724!2d28.02837271514332!3d-26.192908869875666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b2a678e0f%3A0xff86f7e87f36b795!2sWits%20University!5e0!3m2!1sen!2sza!4v1656143090659!5m2!1sen!2sza" 
+            width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
-      </section>
-
-      <section id="gallery" class="gallery-section text-center">
-        <div class="container">
-          <h2 class="">Gallery</h2>
-            <div class="gallery justify-content-center align-items-center">
-              <table>
-                <tr >
-                  <td><img class="card image-fluid" src="images/image1.jpg" alt=""></td>
-                  <td><img class="card image-fluid" src="images/image2.jpg" alt=""></td>
-                  <td><img class="card image-fluid" src="images/image3.jpg" alt=""></td>
-                  
-                </tr>
-                <tr >
-                  <td><img class="card image-fluid" src="images/image4.jpg" alt=""></td>
-                  <td><img class="card image-fluid" src="images/image5.jpg" alt=""></td>
-                  <td><img class="card image-fluid" src="images/image14.jpg" alt=""></td>
-                  
-                </tr>
-              </table>
+          <div class="contacts col-md-6 d-block">
+            <div class="call">
+              <i class="fas fa-2x fa-phone mb-2 text-center"></i>
+              <p>(+27) 63 393 3830</p>
             </div>
-           
-            
-          
-      </section>
 
+            <div class="whatsapp">
+              <i class="fab fa-2x fa-whatsapp mb-2"></i>
+              <p><a class="text-decoration-none" href="https://wa.me/27820524841" target="_blank">082 052 4841</a></p> 
+            </div>
 
+            <div class="email">
+              <i class="fas fa-2x fa-envelope mb-2"></i>
+              <p>hectormavunda@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
    
     <footer class="text-center small" id="footer">
       <div class="container">
-        Copyright &copy; Lorem 2021
+        <div class="row">
+          <div class="col-md-6 justify-content-end text-end">
+            &copy; 2022 Flowers
+          </div>
+          <div class="col-md-6">
+            <div class="footer-socials d-flex justify-content-end text-end" >
+              <div><a href=""><i class="fab fa-facebook-f mx-2 my-2"></i></a></div>
+              <div><a href=""><i class="fab fa-instagram mx-2 my-2"></i></a></div>
+              <div><a href=""><i class="fab fa-twitter mx-2 my-2"></i></a></div>   
+          </div>
+          </div>
+        </div>
+        
+        
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <script src="jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <script src="jquery-easing/jquery.easing.min.js"></script>
+    <script src="javascript.js"></script>
+    
   </body>
 </html>

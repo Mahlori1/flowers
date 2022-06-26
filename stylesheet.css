@@ -1,26 +1,30 @@
 body{
     font-family: 'Varela Round';
-    /*background-color: #e9dddd;*/
-    
     background-color: #f5efef;
-    margin: 20px;
-    
-
+    position: relative;
 }
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @NAVBAR                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
 
 #nav {
-    
-  
-    background-color: #e9dddd;
-    font-weight: bold;
-    font-family: 'Helvetica';
+    background-color: #e9dddd; 
 }
 
-#footer{
-    background-color: #e9dddd;
-    padding: 50px;
-}
+#nav .nav-link.active {
+    outline: none;
+    width: fit-content;
+    border-bottom: 0.25rem solid rgb(41, 41, 41);
+  }
 
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @HEADER                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
 
 .header{
     position: relative;
@@ -31,49 +35,185 @@ body{
     
 }
 
-.header h1{
-    font-family: 'Varela Round';
-    letter-spacing: 0.8rem;
-    
-}
-
-.about-section{
-    padding-top: 10rem;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
-.gallery-section{
-    padding: 10rem 0;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
-td img{
-    max-width: 100px;
-}
-
-.gallery{
-    max-width: 70%;
-    margin: auto;
-    padding-top: 2rem;
-    align-items: center;
-}
-
-li+li{
-    padding-left: 10PX;
-}
-
-@media (min-width: 600px) {
-    td img{
-        max-width: 170px;
+@media screen and (max-width: 767px){
+    .header{
+        padding: 10rem 1rem 3rem;
     }
 }
 
-@media (min-width: 992px) {
-    td img{
-        max-width: 250px;
+.header h1{
+    letter-spacing: 0.8rem; 
+}
+
+.socials{
+    position: fixed;
+    opacity: 0.2;
+    background-color: #f5efef;
+    float: left;
+    transition: 0.5s;
+}
+
+.socials:hover{
+    opacity: 1;
+    background-color: #e9dddd;
+}
+
+@media screen and (max-width: 991px) {
+    .socials{
+        display: none !important;
+    }
+}
+
+.socials a{
+    background: transparent;
+    color: rgb(41, 41, 41);
+}
+
+.mainText{
+    letter-spacing: 2px;
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @ABOUT                                      |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.about-section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px){
+    .about-section{
+        padding: 3rem 1rem;
+    }
+}
+
+.about-socials .fa-facebook-f{
+    color: rgb(41, 41, 41);
+    font-size: 1.5rem;
+}
+
+.about-socials .fa-instagram{
+    font-size: 1.5rem;
+    color: rgb(41, 41, 41);
+}
+
+.about-socials .fa-twitter{
+    font-size: 1.5rem;
+    color: rgb(41, 41, 41);
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @GALLERY                                    |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.gallery-section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px){
+    .gallery-section{
+        padding: 3rem 0rem;
+    }
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @CONTACT                                    |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+.map{
+    height: 50vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contacts-section{
+    padding-top: 10rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .map{
+        height: 550px;
+    }
+}
+
+.contacts{
+    padding-top: 0rem;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .contacts-section{
+        padding-top: 3rem;
+    }
+
+    .contacts p{
+        line-height: 50%;
+        font-size: smaller;
+    }
+
+    .contacts .fa-phone{
+        font-size: 1rem;
+    }
+
+    .contacts .fa-envelope{
+        font-size: 1rem;
+    }
+
+    .contacts .fa-whatsapp{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .contacts{
+        padding-top: 5rem;
+        text-align: center;
+        justify-content: end;
+    }
+
+    .contacts-section h4{
+        font-size: larger !important;
+    }
+}
+
+.contacts-socials i{
+    color: rgb(41, 41, 41);
+}
+
+/*----------------------------------------------------------------------------------\
+|                                                                                   |
+|                                       @FOOTER                                     |
+|                                                                                   |
+\---------------------------------------------------------------------------------*/
+
+#footer{
+    background-color: #e9dddd;
+    padding: 50px;
+}
+
+.footer-socials i{
+    color: rgb(41, 41, 41);
+}
+
+@media screen and (max-width: 767px){
+    #footer{
+        padding: 30px;
     }
 }
